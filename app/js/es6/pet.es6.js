@@ -28,6 +28,7 @@ class Pet{
     if(this.full <= 0){this.full = 0;}
     if(this.full === 0 || this.energy === 0){
       $(`div[data-name=${this.name}]`).find('.img').css('background-image', 'url(../../media/rip.png)');
+      $(`div[data-name=${this.name}]`).find('.img').text(this.name);
     }
   }
 
@@ -44,6 +45,7 @@ class Pet{
     if(this.full >= 50){this.full = 50;}
     if(this.energy === 0){
       $(`div[data-name=${this.name}]`).find('.img').css('background-image', 'url(../../media/rip.png)');
+      $(`div[data-name=${this.name}]`).find('.img').text(this.name);
     }
   }
 

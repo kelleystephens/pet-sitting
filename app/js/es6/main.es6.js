@@ -43,5 +43,7 @@
     let pet = new Pet(species, speciesImg, gender, name, age);
     pets.push(pet);
     pet.render();
+    $('#name').val('');
+    $('#age').val('');
   }
 })();
