@@ -4,12 +4,36 @@ html(lang='en')
     meta(charset='utf-8')
     title Pet Sitting
     link(rel='stylesheet', href='./css/app.css')
+    link(rel='stylesheet', href='./css/buttons.css')
   body
-    h1 Pet Sitting
+    header
+      h1 Pet Sitting
+
+    #controls
+      select#species.button-dropdown.button.button-rounded.button-flat-primary(data-buttons='dropdown')
+        img.fa.fa-caret-down
+        option Type
+        option(value='kitten.png') Kitten
+        option(value='puppy.gif') Puppy
+        option(value='bunny.png') Bunny
+        option(value='chick.png') Chick
+      select#gender.button-dropdown.button.button-rounded.button-flat-primary(data-buttons='dropdown')
+        img.fa.fa-caret-down
+        option Gender
+        option Male
+        option Female
+      input#name(type='text' autofocus=true placeholder='Name')
+      input#age(type='text' autofocus=true placeholder='Age')
+      button#add.button.glow.button-primary Add!
+
+    #myPets My Pets:
+    #pets
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
+    script(src='./js/es6/database.js')
+    script(src='./js/es6/pet.js')
     script(src='./js/es6/main.js')
