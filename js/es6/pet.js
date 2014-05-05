@@ -3,7 +3,7 @@ var Pet = function Pet(species, speciesImg, gender) {
   var name = arguments[3] !== (void 0) ? arguments[3] : 'Max';
   var age = arguments[4] !== (void 0) ? arguments[4] : 0;
   this.species = species;
-  this.speciesImg = ("../../media/" + speciesImg);
+  this.speciesImg = ("./media/" + speciesImg);
   this.gender = gender;
   this.name = name;
   this.age = age * 1;

@@ -5,7 +5,7 @@
 class Pet{
   constructor(species, speciesImg, gender, name='Max', age=0){
     this.species = species;
-    this.speciesImg = `../../media/${speciesImg}`;
+    this.speciesImg = `./media/${speciesImg}`;
     this.gender = gender;
     this.name = name;
     this.age = age * 1;
